@@ -67,7 +67,8 @@ The app features a clean, modern interface with:
    - Create a new Firebase project
    - Enable Authentication (Anonymous)
    - Enable Firestore Database
-   - Download `firebase_options.dart` and place it in the `lib/` directory
+   - Download `google-services.json` and place it in `android/app/`
+   - Copy `.env.example` to `.env` and fill in your Firebase credentials
 
 4. **Run the app**
    ```bash
@@ -80,8 +81,22 @@ The app features a clean, modern interface with:
 2. Create a new project
 3. Enable Authentication with Anonymous sign-in
 4. Create a Firestore database
-5. Download the `firebase_options.dart` file
-6. Place it in the `lib/` directory
+5. Download the `google-services.json` file and place it in `android/app/`
+6. Copy `.env.example` to `.env` and update with your Firebase credentials:
+
+```bash
+cp .env.example .env
+```
+
+Then edit `.env` with your actual Firebase values:
+```
+FIREBASE_API_KEY=your-actual-api-key
+FIREBASE_APP_ID=your-actual-app-id
+FIREBASE_MESSAGING_SENDER_ID=your-actual-sender-id
+FIREBASE_PROJECT_ID=your-actual-project-id
+FIREBASE_STORAGE_BUCKET=your-actual-storage-bucket
+FIREBASE_AUTH_DOMAIN=your-actual-auth-domain
+```
 
 ## Project Structure
 

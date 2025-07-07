@@ -37,6 +37,10 @@ migrate_working_dir/
 # Firebase / Secrets
 android/app/google-services.json
 ios/Runner/GoogleService-Info.plist
+.env
+.env.local
+.env.production
+.env.development
 
 # Symbolication related
 app.*.symbols
